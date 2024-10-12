@@ -1,0 +1,81 @@
+/* Estilos básicos y oscuros */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para encabezados */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.75em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: 1.25em;
+}
+
+/* Estilo para el párrafo */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+/* Selectores personalizados */
+select, input, button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+select:hover, input:hover, button:hover {
+    background-color: #444;
+}
+
+button {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+/* Efectos para texto al cambiar la fuente */
+#titulo, #texto {
+    transition: font-family 0.5s ease;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Fuentes CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Oswald&family=Poppins&family=Merriweather&family=Raleway&family=Nunito&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">Prueba de Fuentes CSS</h1>
+        <h2>Encabezado H2</h2>
+        <h3>Encabezado H3</h3>
+        <h4>Encabezado H4</h4>
+        <h5>Encabezado H5</h5>
+        <h6>Encabezado H6</h6>
+        <p id="texto">Este es un texto de ejemplo para probar diferentes fuentes. Cambia la fuente usando el selector o introduce una fuente personalizada.</p>
+
+        <select id="fuentes" onchange="cambiarFuente()">
+            <option value="">Selecciona una fuente</option>
+            <option value="'Arial', sans-serif">Arial</option>
+            <option value="'Courier New', monospace">Courier New</option>
+            <option value="'Georgia', serif">Georgia</option>
+            <option value="'Times New Roman', serif">Times New Roman</option>
+            <option value="'Verdana', sans-serif">Verdana</option>
+            <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+            <option value="'Impact', sans-serif">Impact</option>
+            <option value="'Palatino Linotype', serif">Palatino Linotype</option>
+            <option value="'Lucida Console', monospace">Lucida Console</option>
+            <option value="'Comic Sans MS', cursive">Comic Sans MS</option>
+            <option value="'Roboto', sans-serif">Roboto (Google Fonts)</option>
+            <option value="'Open Sans', sans-serif">Open Sans (Google Fonts)</option>
+            <option value="'Lato', sans-serif">Lato (Google Fonts)</option>
+            <option value="'Montserrat', sans-serif">Montserrat (Google Fonts)</option>
+            <option value="'Oswald', sans-serif">Oswald (Google Fonts)</option>
+            <option value="'Poppins', sans-serif">Poppins (Google Fonts)</option>
+            <option value="'Merriweather', serif">Merriweather (Google Fonts)</option>
+            <option value="'Raleway', sans-serif">Raleway (Google Fonts)</option>
+            <option value="'Nunito', sans-serif">Nunito (Google Fonts)</option>
+            <option value="'Source Sans Pro', sans-serif">Source Sans Pro (Google Fonts)</option>
+            <option value="'Fjalla One', sans-serif">Fjalla One (Google Fonts)</option>
+            <option value="'Slabo 27px', serif">Slabo 27px (Google Fonts)</option>
+            <option value="'PT Sans', sans-serif">PT Sans (Google Fonts)</option>
+            <option value="'Quicksand', sans-serif">Quicksand (Google Fonts)</option>
+            <option value="'Yanone Kaffeesatz', sans-serif">Yanone Kaffeesatz (Google Fonts)</option>
+            <option value="'Roboto Slab', serif">Roboto Slab (Google Fonts)</option>
+            <option value="'Playfair Display', serif">Playfair Display (Google Fonts)</option>
+            <option value="'Cabin', sans-serif">Cabin (Google Fonts)</option>
+            <option value="'Work Sans', sans-serif">Work Sans (Google Fonts)</option>
+            <option value="'Heebo', sans-serif">Heebo (Google Fonts)</option>
+            <option value="'Zilla Slab', serif">Zilla Slab (Google Fonts)</option>
+            <option value="'Barlow', sans-serif">Barlow (Google Fonts)</option>
+            <option value="'Lexend', sans-serif">Lexend (Google Fonts)</option>
+            <option value="'Alata', sans-serif">Alata (Google Fonts)</option>
+            <option value="'DM Sans', sans-serif">DM Sans (Google Fonts)</option>
+            <option value="'Exo', sans-serif">Exo (Google Fonts)</option>
+            <option value="'Comfortaa', cursive">Comfortaa (Google Fonts)</option>
+            <option value="'Karla', sans-serif">Karla (Google Fonts)</option>
+            <option value="'Julius Sans One', sans-serif">Julius Sans One (Google Fonts)</option>
+            <option value="'Spectral', serif">Spectral (Google Fonts)</option>
+            <option value="'Oxygen', sans-serif">Oxygen (Google Fonts)</option>
+            <option value="'Signika', sans-serif">Signika (Google Fonts)</option>
+            <option value="'Chivo', sans-serif">Chivo (Google Fonts)</option>
+            <option value="'Bitter', serif">Bitter (Google Fonts)</option>
+            <option value="'Space Mono', monospace">Space Mono (Google Fonts)</option>
+            <option value="'Alegreya', serif">Alegreya (Google Fonts)</option>
+            <option value="'Inconsolata', monospace">Inconsolata (Google Fonts)</option>
+            <option value="'Chewy', cursive">Chewy (Google Fonts)</option>
+            <option value="'Baloo 2', cursive">Baloo 2 (Google Fonts)</option>
+            <option value="'Abel', sans-serif">Abel (Google Fonts)</option>
+            <option value="'Courgette', cursive">Courgette (Google Fonts)</option>
+            <option value="'Catamaran', sans-serif">Catamaran (Google Fonts)</option>
+            <option value="'Sora', sans-serif">Sora (Google Fonts)</option>
+            <option value="'Zilla Slab', serif">Zilla Slab (Google Fonts)</option>
+            <option value="'Righteous', sans-serif">Righteous (Google Fonts)</option>
+            <option value="'Fira Sans', sans-serif">Fira Sans (Google Fonts)</option>
+            <option value="'Roboto Condensed', sans-serif">Roboto Condensed (Google Fonts)</option>
+            <option value="'Be Vietnam', sans-serif">Be Vietnam (Google Fonts)</option>
+            <option value="'Averia Serif Libre', serif">Averia Serif Libre (Google Fonts)</option>
+            <option value="'Ubuntu', sans-serif">Ubuntu (Google Fonts)</option>
+            <option value="'Archivo', sans-serif">Archivo (Google Fonts)</option>
+            <option value="'Roboto Mono', monospace">Roboto Mono (Google Fonts)</option>
+            <option value="'Rock Salt', cursive">Rock Salt (Google Fonts)</option>
+            <option value="'Dancing Script', cursive">Dancing Script (Google Fonts)</option>
+            <option value="'Mali', sans-serif">Mali (Google Fonts)</option>
+            <option value="'Bad Script', cursive">Bad Script (Google Fonts)</option>
+            <option value="'Permanent Marker', cursive">Permanent Marker (Google Fonts)</option>
+            <option value="'Gloria Hallelujah', cursive">Gloria Hallelujah (Google Fonts)</option>
+            <option value="'Russo One', sans-serif">Russo One (Google Fonts)</option>
+            <option value="'Amatic SC', cursive">Amatic SC (Google Fonts)</option>
+            <option value="'Sacramento', cursive">Sacramento (Google Fonts)</option>
+            <option value="'Crimson Text', serif">Crimson Text (Google Fonts)</option>
+            <option value="'Gloock', serif">Gloock (Google Fonts)</option>
+            <option value="'Gloock', serif">Gloock (Google Fonts)</option>
+            <option value="'Be Vietnam', sans-serif">Be Vietnam (Google Fonts)</option>
+            <option value="'Averia Serif Libre', serif">Averia Serif Libre (Google Fonts)</option>
+            <option value="'Roboto Mono', monospace">Roboto Mono (Google Fonts)</option>
+            <option value="'Rock Salt', cursive">Rock Salt (Google Fonts)</option>
+            <option value="'Dancing Script', cursive">Dancing Script (Google Fonts)</option>
+            <option value="'Mali', sans-serif">Mali (Google Fonts)</option>
+            <option value="'Bad Script', cursive">Bad Script (Google Fonts)</option>
+            <option value="'Permanent Marker', cursive">Permanent Marker (Google Fonts)</option>
+            <option value="'Gloria Hallelujah', cursive">Gloria Hallelujah (Google Fonts)</option>
+            <option value="'Russo One', sans-serif">Russo One (Google Fonts)</option>
+            <option value="'Amatic SC', cursive">Amatic SC (Google Fonts)</option>
+            <option value="'Sacramento', cursive">Sacramento (Google Fonts)</option>
+            <option value="'Crimson Text', serif">Crimson Text (Google Fonts)</option>
+        </select>
+
+        <input type="text" id="fuentePersonalizada" placeholder="Escribe el nombre de una fuente" />
+        <button onclick="aplicarFuentePersonalizada()">Aplicar Fuente Personalizada</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
