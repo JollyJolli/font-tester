@@ -110,6 +110,13 @@
 
         <input type="text" id="fuentePersonalizada" placeholder="Escribe el nombre de una fuente" />
         <button onclick="aplicarFuentePersonalizada()">Aplicar Fuente Personalizada</button>
+
+        <div id="codigo-css" style="margin-top: 20px;">
+            <label for="cssCode">Código CSS:</label><br>
+            <textarea id="cssCode" rows="4" cols="50" readonly></textarea><br>
+            <button onclick="copiarCSS()">Copiar Código CSS</button>
+        </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
