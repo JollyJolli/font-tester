@@ -1,31 +1,31 @@
-function cambiarFuente() {
-    const fuenteSeleccionada = document.getElementById("fuentes").value;
+function changeFont() {
+    const selectedFont = document.getElementById("fonts").value;
     const body = document.body;
     const cssCodeArea = document.getElementById("cssCode");
 
-    if (fuenteSeleccionada) {
-        body.style.fontFamily = fuenteSeleccionada;
-        cssCodeArea.value = `body { font-family: ${fuenteSeleccionada}; }`;
+    if (selectedFont) {
+        body.style.fontFamily = selectedFont;
+        cssCodeArea.value = `body { font-family: ${selectedFont}; }`;
     } else {
         body.style.fontFamily = 'Arial, sans-serif';
         cssCodeArea.value = `body { font-family: 'Arial', sans-serif; }`;
     }
 }
 
-function aplicarFuentePersonalizada() {
-    const fuentePersonalizada = document.getElementById("fuentePersonalizada").value;
+function applyCustomFont() {
+    const customFont = document.getElementById("customFont").value;
     const body = document.body;
     const cssCodeArea = document.getElementById("cssCode");
 
-    if (fuentePersonalizada) {
-        body.style.fontFamily = fuentePersonalizada;
-        cssCodeArea.value = `body { font-family: ${fuentePersonalizada}; }`;
+    if (customFont) {
+        body.style.fontFamily = customFont;
+        cssCodeArea.value = `body { font-family: ${customFont}; }`;
     }
 }
 
-function copiarCSS() {
+function copyCSS() {
     const cssCodeArea = document.getElementById("cssCode");
     cssCodeArea.select();
     document.execCommand("copy");
-    alert("Código CSS copiado al portapapeles!");
+    alert("CSS code copied to clipboard!");
 }

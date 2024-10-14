@@ -1,4 +1,4 @@
-/* Estilos básicos y oscuros */
+/* Basic and dark styles */
 body {
     background-color: #121212;
     color: #ffffff;
@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-/* Estilos para encabezados */
+/* Styles for headers */
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
     color: #ffcc00;
@@ -44,14 +44,14 @@ h6 {
     font-size: 1.25em;
 }
 
-/* Estilo para el párrafo */
+/* Style for the paragraph */
 p {
     font-size: 1.1em;
     line-height: 1.6;
     color: #cccccc;
 }
 
-/* Selectores personalizados */
+/* Custom styles for selectors */
 select, input, button {
     margin-top: 20px;
     padding: 10px;
@@ -75,7 +75,7 @@ input::placeholder {
     color: #888;
 }
 
-/* Efectos para texto al cambiar la fuente */
-#titulo, #texto {
+/* Effects for text when changing the font */
+#title, #text {
     transition: font-family 0.5s ease;
 }

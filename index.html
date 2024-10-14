@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba de Fuentes CSS</title>
+    <title>CSS Fonts Test</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Lato&family=Montserrat&family=Oswald&family=Poppins&family=Merriweather&family=Raleway&family=Nunito&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1 id="titulo">Prueba de Fuentes CSS</h1>
-        <h2>Encabezado H2</h2>
-        <h3>Encabezado H3</h3>
-        <h4>Encabezado H4</h4>
-        <h5>Encabezado H5</h5>
-        <h6>Encabezado H6</h6>
-        <p id="texto">Este es un texto de ejemplo para probar diferentes fuentes. Cambia la fuente usando el selector o introduce una fuente personalizada.</p>
+        <h1 id="title">CSS Fonts Test</h1>
+        <h2>Header H2</h2>
+        <h3>Header H3</h3>
+        <h4>Header H4</h4>
+        <h5>Header H5</h5>
+        <h6>Header H6</h6>
+        <p id="text">This is a sample text to test different fonts. Change the font using the selector or enter a custom font.</p>
 
-        <select id="fuentes" onchange="cambiarFuente()">
-            <option value="">Selecciona una fuente</option>
+        <select id="fonts" onchange="changeFont()">
+            <option value="">Select a font</option>
             <option value="'Arial', sans-serif">Arial</option>
             <option value="'Courier New', monospace">Courier New</option>
             <option value="'Georgia', serif">Georgia</option>
@@ -92,29 +92,15 @@
             <option value="'Sacramento', cursive">Sacramento (Google Fonts)</option>
             <option value="'Crimson Text', serif">Crimson Text (Google Fonts)</option>
             <option value="'Gloock', serif">Gloock (Google Fonts)</option>
-            <option value="'Gloock', serif">Gloock (Google Fonts)</option>
-            <option value="'Be Vietnam', sans-serif">Be Vietnam (Google Fonts)</option>
-            <option value="'Averia Serif Libre', serif">Averia Serif Libre (Google Fonts)</option>
-            <option value="'Roboto Mono', monospace">Roboto Mono (Google Fonts)</option>
-            <option value="'Rock Salt', cursive">Rock Salt (Google Fonts)</option>
-            <option value="'Dancing Script', cursive">Dancing Script (Google Fonts)</option>
-            <option value="'Mali', sans-serif">Mali (Google Fonts)</option>
-            <option value="'Bad Script', cursive">Bad Script (Google Fonts)</option>
-            <option value="'Permanent Marker', cursive">Permanent Marker (Google Fonts)</option>
-            <option value="'Gloria Hallelujah', cursive">Gloria Hallelujah (Google Fonts)</option>
-            <option value="'Russo One', sans-serif">Russo One (Google Fonts)</option>
-            <option value="'Amatic SC', cursive">Amatic SC (Google Fonts)</option>
-            <option value="'Sacramento', cursive">Sacramento (Google Fonts)</option>
-            <option value="'Crimson Text', serif">Crimson Text (Google Fonts)</option>
         </select>
 
-        <input type="text" id="fuentePersonalizada" placeholder="Escribe el nombre de una fuente" />
-        <button onclick="aplicarFuentePersonalizada()">Aplicar Fuente Personalizada</button>
+        <input type="text" id="customFont" placeholder="Enter a font name" />
+        <button onclick="applyCustomFont()">Apply Custom Font</button>
 
-        <div id="codigo-css" style="margin-top: 20px;">
-            <label for="cssCode">Código CSS:</label><br>
+        <div id="css-code" style="margin-top: 20px;">
+            <label for="cssCode">CSS Code:</label><br>
             <textarea id="cssCode" rows="4" cols="50" readonly></textarea><br>
-            <button onclick="copiarCSS()">Copiar Código CSS</button>
+            <button onclick="copyCSS()">Copy CSS Code</button>
         </div>
         
     </div>
